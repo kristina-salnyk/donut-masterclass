@@ -1,0 +1,64 @@
+.nav {
+  padding-top: 8px;
+
+  position: relative;
+}
+
+.nav__menu-btn {
+  position: absolute;
+  top: 16px;
+  right: 0;
+
+  border: none;
+  background-color: inherit;
+
+  &.is-open {
+    top: 20px;
+    right: 20px;
+  }
+}
+
+.nav__menu-icon {
+  width: 30px;
+  height: 16px;
+
+  .nav__menu-btn.is-open & {
+    width: 18px;
+    height: 18px;
+  }
+}
+
+.nav__icon {
+  &--close {
+    display: none;
+
+    .nav__menu-btn.is-open & {
+      display: block;
+    }
+  }
+
+  &--menu {
+    display: block;
+
+    .nav__menu-btn.is-open & {
+      display: none;
+    }
+  }
+}
+
+.nav__menu-container {
+  &.is-open {
+    padding-top: 25px;
+    padding-bottom: 25px;
+
+    position: fixed;
+    top: 0;
+    left: 0;
+
+    width: 100vw;
+    height: 100vh;
+
+    background: rgba(254, 243, 228, 0.9);
+    backdrop-filter: blur(4px);
+  }
+}
