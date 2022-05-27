@@ -1,1 +1,54 @@
 @import '~node_modules/modern-normalize/modern-normalize.css';
+
+body {
+  &.modal-is-open {
+    position: relative;
+
+    height: 100%;
+    width: 100%;
+
+    overflow: hidden;
+  }
+}
+
+ul {
+  list-style-type: none;
+}
+
+a {
+  text-decoration: none;
+}
+
+h1,
+h2,
+h3,
+h4,
+h5,
+h6,
+ul,
+p {
+  margin: 0;
+  padding: 0;
+}
+
+img,
+svg {
+  display: block;
+  max-width: 100%;
+  height: auto;
+}
+
+.partial-header {
+  height: 100vh;
+
+  background-image: url('../images/header-bg.png');
+  background-repeat: no-repeat;
+  background-position: center;
+  background-size: 100% 100%;
+
+  @media screen and (min-device-pixel-ratio: 2),
+    (min-resolution: 192dpi),
+    (min-resolution: 2dppx) {
+    background-image: url('../images/header-bg@2x.png');
+  }
+}

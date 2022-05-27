@@ -1,0 +1,31 @@
+.pages {
+  display: none;
+
+  .nav__menu-container.is-open & {
+    margin-top: 40px;
+
+    display: block;
+  }
+}
+
+.pages__item:not(:first-child) {
+  margin-top: 45px;
+}
+
+.pages__item {
+  text-align: center;
+}
+
+.pages__link {
+  font-family: 'Montserrat';
+  font-weight: 500;
+  font-size: 24px;
+  line-height: 1.21;
+
+  color: #2e2520;
+}
+
+.pages__link:hover,
+.pages__link:focus {
+  color: #876655;
+}
