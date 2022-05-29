@@ -1,7 +1,7 @@
 .pages {
   display: none;
 
-  .nav__menu-container.is-open & {
+  .nav.is-open & {
     margin-top: 40px;
 
     display: block;
@@ -10,6 +10,10 @@
 
 .pages__item:not(:first-child) {
   margin-top: 45px;
+
+  @media screen and (min-width: 769px) {
+    margin-top: 40px;
+  }
 }
 
 .pages__item {

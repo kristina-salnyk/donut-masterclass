@@ -4,8 +4,28 @@
 
 .header__img {
   position: absolute;
-  top: 0;
-  left: 0;
 
-  width: 37%;
+  &--mobile {
+    top: 0;
+    left: 0;
+
+    width: 37%;
+  }
+
+  &--tablet {
+    display: none;
+
+    top: 0;
+    left: 37%;
+  }
+
+  @media screen and (min-width: 769px) {
+    &--mobile {
+      display: none;
+    }
+
+    &--tablet {
+      display: block;
+    }
+  }
 }
