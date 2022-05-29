@@ -1,2 +1,0 @@
-!function(){var e={menuBtn:document.querySelector("[data-menu-button]"),menu:document.querySelector("[data-menu]"),menuLink:document.querySelectorAll("[data-menu-link]")};function n(){var n="true"===e.menuBtn.getAttribute("aria-expanded")||!1;e.menuBtn.setAttribute("aria-expanded",!n),e.menuBtn.classList.toggle("is-open"),e.menu.classList.toggle("is-open"),document.body.classList.toggle("modal-is-open")}e.menuBtn.addEventListener("click",n),e.menuLink.forEach((function(e){e.addEventListener("click",n)}))}();
-//# sourceMappingURL=index.3395644f.js.map

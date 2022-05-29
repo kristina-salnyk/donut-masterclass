@@ -1,2 +1,0 @@
-(()=>{const e={menuBtn:document.querySelector("[data-menu-button]"),menu:document.querySelector("[data-menu]"),menuLink:document.querySelectorAll("[data-menu-link]")};function t(){const t="true"===e.menuBtn.getAttribute("aria-expanded")||!1;e.menuBtn.setAttribute("aria-expanded",!t),e.menuBtn.classList.toggle("is-open"),e.menu.classList.toggle("is-open"),document.body.classList.toggle("modal-is-open")}e.menuBtn.addEventListener("click",t),e.menuLink.forEach((e=>{e.addEventListener("click",t)}))})();
-//# sourceMappingURL=index.361a70ec.js.map
