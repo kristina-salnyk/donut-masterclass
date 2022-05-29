@@ -1,6 +1,6 @@
 <header class="header">
   <img
-    class="header__img"
+    class="header__img header__img--mobile"
     srcset="
       ./images/header-donuts-120.png 120w,
       ./images/header-donuts-240.png 240w,
@@ -8,12 +8,23 @@
     "
     sizes="(max-width: 319px) 120px, (min-width: 320px) and (max-width: 768px) 240px"
     src="./images/header-donuts-120.png"
-    alt="UI Designer"
+    alt="Donuts"
   />
 
-  <div class="container header__container">
-    <nav class="nav">
-      <div class="nav__menu-container" data-menu>
+  <img
+    class="header__img header__img--tablet"
+    srcset="
+      ./images/header-donuts-tablet-380.png 380w,
+      ./images/header-donuts-tablet-760.png 760w
+    "
+    sizes="(min-width: 769px) 380px"
+    src="./images/header-donuts-tablet-380.png"
+    alt="Donuts"
+  />
+
+  <div class="container">
+    <nav class="nav" data-menu>
+      <div class="nav__container">
         <a class="logo" href="./index.html">
           <svg class="logo__icon" aria-label="Logo">
             <use class="icon-logo" href="./images/icons.svg#icon-logo"></use>
