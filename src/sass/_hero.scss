@@ -1,0 +1,84 @@
+.hero {
+  margin-top: 30px;
+
+  @media screen and (max-width: 768px) {
+    text-align: center;
+  }
+
+  @media screen and (min-width: 769px) and (max-width: 1279px) {
+    margin-top: 15px;
+  }
+}
+
+.hero__title {
+  @media screen and (max-width: 768px) {
+    margin-left: auto;
+    margin-right: auto;
+  }
+
+  max-width: 224px;
+
+  font-family: 'Caveat Brush';
+  font-weight: 400;
+  font-size: 30px;
+  line-height: 1.27;
+
+  color: #2e2520;
+
+  @media screen and (min-width: 1280px) {
+    max-width: 490px;
+
+    font-size: 64px;
+    line-height: 1.02;
+  }
+}
+
+.hero__descr {
+  margin-top: 8px;
+
+  font-family: 'Montserrat';
+  font-weight: 500;
+  font-size: 16px;
+  line-height: 1.25;
+
+  color: #2e2520;
+
+  @media screen and (min-width: 1280px) {
+    margin-top: 16px;
+
+    font-size: 24px;
+    line-height: 1.21;
+  }
+}
+
+.hero__btn {
+  margin-top: 32px;
+  padding-top: 8px;
+  padding-bottom: 8px;
+
+  width: 145px;
+
+  font-family: 'Caveat Brush';
+  font-weight: 400;
+  font-size: 18px;
+  line-height: 1.28;
+
+  text-align: center;
+
+  border: none;
+
+  color: #ffffff;
+  background: #ab816c;
+  border-radius: 25px;
+
+  @media screen and (min-width: 769px) and (max-width: 1279px) {
+    margin-top: 20px;
+  }
+
+  @media screen and (min-width: 1280px) {
+    width: 158px;
+
+    font-size: 24px;
+    line-height: 1.25;
+  }
+}
