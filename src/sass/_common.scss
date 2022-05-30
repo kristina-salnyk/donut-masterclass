@@ -42,17 +42,39 @@ button {
   padding: 0;
 }
 
-.partial-header {
-  height: 100vh;
+.top-wrap {
+  height: 300vh;
 
-  background-image: url('../images/header-bg.png');
+  background-image: url('../images/header-bg-mobile.png');
   background-repeat: no-repeat;
-  background-position: center;
-  background-size: 100% 100%;
+  background-position: center 0;
+  background-size: contain;
 
   @media screen and (min-device-pixel-ratio: 2),
     (min-resolution: 192dpi),
     (min-resolution: 2dppx) {
-    background-image: url('../images/header-bg@2x.png');
+    background-image: url('../images/header-bg-mobile@2x.png');
+  }
+
+  @media screen and (min-width: 769px) {
+    background-image: url('../images/header-bg-tablet.png');
+    background-size: 769px;
+
+    @media screen and (min-device-pixel-ratio: 2),
+      (min-resolution: 192dpi),
+      (min-resolution: 2dppx) {
+      background-image: url('../images/header-bg-tablet@2x.png');
+    }
+  }
+
+  @media screen and (min-width: 1280px) {
+    background-image: url('../images/header-bg-desktop.png');
+    background-size: 1280px;
+
+    @media screen and (min-device-pixel-ratio: 2),
+      (min-resolution: 192dpi),
+      (min-resolution: 2dppx) {
+      background-image: url('../images/header-bg-desktop@2x.png');
+    }
   }
 }
