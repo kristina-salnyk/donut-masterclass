@@ -92,9 +92,18 @@
   }
 }
 
+.nav__menu-btn:hover,
+.nav__menu-btn:focus {
+  color: #876655;
+
+  cursor: pointer;
+}
+
 .nav__menu-icon {
   width: 30px;
   height: 16px;
+
+  fill: currentColor;
 
   .nav__menu-btn.is-open & {
     width: 18px;
