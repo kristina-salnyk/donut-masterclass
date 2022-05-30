@@ -1,0 +1,71 @@
+.about-us {
+  &__title {
+    margin-bottom: 8px;
+
+    font-family: 'Caveat brush';
+    font-size: 24px;
+    text-align: center;
+
+    color: rgba(46, 37, 32, 1);
+
+    @media screen and (min-width: 769px) and (max-width: 1279px) {
+      margin-bottom: 16px;
+      text-align: initial;
+    }
+  }
+
+  &__text {
+    display: block;
+    margin-bottom: 20px;
+
+    font-size: 16px;
+    line-height: 1.25;
+  }
+
+  &__button {
+    background-color: transparent;
+    border: none;
+    padding: 0;
+    color: #ab816c;
+    font-family: 'Caveat brush';
+    font-size: 18px;
+    display: block;
+  }
+
+  &__wrapper {
+    margin-top: 16px;
+
+    width: 100%;
+
+    @media screen and (min-width: 769px) and (max-width: 1279px) {
+      width: 330px;
+      padding-top: 10px;
+    }
+
+    @media screen and (min-width: 1280px) {
+      width: 392px;
+    }
+  }
+}
+
+.more {
+  margin-bottom: 20px;
+
+  display: none;
+}
+
+.container-wrapper {
+  display: flex;
+  flex-wrap: wrap;
+  justify-content: center;
+
+  @media screen and (min-width: 769px) {
+    display: flex;
+    justify-content: space-between;
+  }
+
+  @media screen and (min-width: 1280px) {
+    justify-content: space-evenly;
+    align-items: center;
+  }
+}
