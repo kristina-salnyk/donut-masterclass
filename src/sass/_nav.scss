@@ -17,7 +17,7 @@
     width: 100vw;
     height: 100vh;
 
-    background: rgba(254, 243, 228, 0.9);
+    background-color: rgba(254, 243, 228, 0.9);
     backdrop-filter: blur(4px);
 
     overflow-y: scroll;
@@ -62,6 +62,8 @@
 
   border: none;
   background-color: inherit;
+
+  transition: color 250ms cubic-bezier(0.4, 0, 0.2, 1);
 
   @media screen and (min-width: 769px) and (max-width: 1279px) {
     padding-top: 32px;
