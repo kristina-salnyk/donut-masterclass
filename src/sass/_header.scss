@@ -1,3 +1,13 @@
+.header {
+  @media screen and (max-width: 768px) {
+    min-height: 60px;
+  }
+
+  @media screen and (min-width: 769px) and (max-width: 1279px) {
+    min-height: 80px;
+  }
+}
+
 .header__img {
   position: absolute;
 

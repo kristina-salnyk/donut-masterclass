@@ -48,7 +48,7 @@ button {
   background-image: url('../images/header-bg-mobile.png');
   background-repeat: no-repeat;
   background-position: center 0;
-  background-size: contain;
+  background-size: 100%;
 
   @media screen and (min-device-pixel-ratio: 2),
     (min-resolution: 192dpi),
