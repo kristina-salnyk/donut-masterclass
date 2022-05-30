@@ -43,38 +43,68 @@ button {
 }
 
 .top-wrap {
-  height: 300vh;
+  margin-left: auto;
+  margin-right: auto;
 
-  background-image: url('../images/header-bg-mobile.png');
+  height: 300vh;
+  @media screen and (max-width: 768px) {
+    max-width: 768px;
+  }
+
+  background-image: url('../images/header-donuts-120.png'),
+    url('../images/header-bg-mobile.png');
   background-repeat: no-repeat;
-  background-position: center 0;
-  background-size: 100%;
+  background-position: left top, center top;
+  background-size: 37%, 100%;
 
   @media screen and (min-device-pixel-ratio: 2),
     (min-resolution: 192dpi),
     (min-resolution: 2dppx) {
-    background-image: url('../images/header-bg-mobile@2x.png');
+    background-image: url('../images/header-donuts-240.png'),
+      url('../images/header-bg-mobile@2x.png');
   }
 
-  @media screen and (min-width: 769px) {
-    background-image: url('../images/header-bg-tablet.png');
-    background-size: 769px;
+  @media screen and (min-width: 320px) and (max-width: 768px) {
+    background-image: url('../images/header-donuts-240.png'),
+      url('../images/header-bg-mobile.png');
 
     @media screen and (min-device-pixel-ratio: 2),
       (min-resolution: 192dpi),
       (min-resolution: 2dppx) {
-      background-image: url('../images/header-bg-tablet@2x.png');
+      background-image: url('../images/header-donuts-480.png'),
+        url('../images/header-bg-mobile@2x.png');
+    }
+  }
+
+  @media screen and (min-width: 769px) {
+    width: 769px;
+
+    background-image: url('../images/header-donuts-tablet-380.png'),
+      url('../images/header-bg-tablet.png');
+    background-position: 289px top, center top;
+    background-size: 380px, 769px;
+
+    @media screen and (min-device-pixel-ratio: 2),
+      (min-resolution: 192dpi),
+      (min-resolution: 2dppx) {
+      background-image: url('../images/header-donuts-tablet-760.png'),
+        url('../images/header-bg-tablet@2x.png');
     }
   }
 
   @media screen and (min-width: 1280px) {
-    background-image: url('../images/header-bg-desktop.png');
-    background-size: 1280px;
+    width: 1280px;
+
+    background-image: url('../images/header-donuts-desktop-716.png'),
+      url('../images/header-bg-desktop.png');
+    background-position: right top, center top;
+    background-size: 716px, 1280px;
 
     @media screen and (min-device-pixel-ratio: 2),
       (min-resolution: 192dpi),
       (min-resolution: 2dppx) {
-      background-image: url('../images/header-bg-desktop@2x.png');
+      background-image: url('../images/header-donuts-desktop-1432.png'),
+        url('../images/header-bg-desktop@2x.png');
     }
   }
 }
