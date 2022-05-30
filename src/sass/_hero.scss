@@ -51,10 +51,12 @@
   }
 }
 
-.hero__btn {
+.hero__link {
   margin-top: 32px;
   padding-top: 8px;
   padding-bottom: 8px;
+
+  display: inline-block;
 
   width: 145px;
 
@@ -64,8 +66,6 @@
   line-height: 1.28;
 
   text-align: center;
-
-  border: none;
 
   color: #ffffff;
   background: #ab816c;
@@ -80,5 +80,28 @@
 
     font-size: 24px;
     line-height: 1.25;
+  }
+}
+
+.hero__link:hover,
+.hero__link:focus {
+  background-color: #876655;
+}
+
+.hero__social {
+  margin-top: 40px;
+
+  @media screen and (min-width: 769px) {
+    margin-top: 20px;
+  }
+
+  @media screen and (min-width: 1280px) {
+    margin-top: 32px;
+  }
+
+  @media screen and (min-width: 769px) {
+    &.social {
+      justify-content: flex-start;
+    }
   }
 }
