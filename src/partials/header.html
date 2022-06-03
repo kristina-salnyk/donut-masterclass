@@ -1,46 +1,75 @@
 <header class="header">
   <div class="container header__container">
-    <nav class="nav" data-menu>
+    <nav id="nav" class="nav" data-menu>
       <div class="nav__container">
         <a class="logo" href="./index.html">
           <svg class="logo__icon" aria-label="Logo">
-            <use class="icon-logo" href="./images/icons.svg#icon-logo"></use>
+            <use
+              class="icon-logo"
+              href="./images/sprite.svg#icon-logo-menu"
+            ></use>
           </svg>
         </a>
 
         <button
-          class="nav__menu-btn"
+          class="nav__btn nav__menu-btn"
           aria-expanded="false"
-          aria-controls="mobile-menu"
+          aria-controls="nav"
           data-menu-button
         >
           <svg class="nav__menu-icon" aria-label="Mobile menu">
             <use
               class="nav__icon--menu"
-              href="./images/icons.svg#icon-menu"
+              href="./images/sprite.svg#icon-menu"
             ></use>
             <use
               class="nav__icon--close"
-              href="./images/icons.svg#icon-close"
+              href="./images/sprite.svg#icon-close"
             ></use>
           </svg>
         </button>
 
         <ul class="pages nav__pages">
           <li class="pages__item">
-            <a class="pages__link" href="#about-us" data-menu-link>About us</a>
+            <a
+              class="pages__link pages__link--chips"
+              href="#about-us"
+              data-menu-link
+              >About us</a
+            >
           </li>
           <li class="pages__item">
-            <a class="pages__link" href="#program" data-menu-link>Program</a>
+            <a
+              class="pages__link pages__link--chocolate"
+              href="#program"
+              data-menu-link
+              >Program</a
+            >
           </li>
           <li class="pages__item">
-            <a class="pages__link" href="#reviews" data-menu-link>Reviews</a>
+            <a
+              class="pages__link pages__link--stripes"
+              href="#reviews"
+              data-menu-link
+              >Reviews</a
+            >
           </li>
           <li class="pages__item">
-            <a class="pages__link" href="#contacts" data-menu-link>Contacts</a>
+            <a
+              class="pages__link pages__link--white"
+              href="#contacts"
+              data-menu-link
+              >Contacts</a
+            >
           </li>
         </ul>
       </div>
     </nav>
   </div>
+
+  <a class="scroll-up" href="#">
+    <svg class="scroll-up__icon">
+      <use href="./images/sprite.svg#icon-up"></use>
+    </svg>
+  </a>
 </header>
