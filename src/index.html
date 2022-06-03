@@ -3,19 +3,37 @@
   <head>
     <meta charset="UTF-8" />
     <meta name="viewport" content="width=device-width, initial-scale=1.0" />
-    <title>Page title</title>
-    <link
-      href="https://fonts.googleapis.com/css2?family=Caveat+Brush&family=Montserrat:wght@500&display=swap"
-      rel="stylesheet"
-    />
+    <title>Donut Masterclass with the Donut King</title>
+    <link rel="shortcut icon" href="./images/favicon.ico" type="image/x-icon">
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+    <link href="https://fonts.googleapis.com/css2?family=Caveat+Brush&family=Montserrat:wght@400;500&display=swap"
+      rel="stylesheet">
+    <link rel="stylesheet" href="https://unpkg.com/swiper@8/swiper-bundle.min.css"/>
     <link rel="stylesheet" href="./sass/index.scss" />
+    <script type="module" src="./js/modal.js"></script>
     <script type="module" src="./index.js"></script>
+    <script type="module" src="./js/mobile-menu.js"></script>
+    <script type="module" src="./js/readmore.js"></script>
+    <script type="module" src="./js/program.js"></script>
+    <script type="module" src="./js/slider.js"></script>
+    <script type="module" src="./js/registr.js"></script>
+    <script type="module" src="./js/scroll-up.js"></script>
+    <script src="https://unpkg.com/swiper@8/swiper-bundle.min.js"></script>
   </head>
   <body>
-    <div class="top-wrap">
-      <include src="./partials/header.html" /></include>
-      <include src="./partials/hero.html" /></include>
-      <include src="./partials/about-us.html" /></include>
+    <!-- ❗️❗️❗️ Add partials like so for every page -->
+    <div class="top-common-background">
+    <include src="./partials/header.html" ></include>
+    <include src="./partials/hero.html" ></include>
+    <include src="./partials/about-us.html" /></include>
+    </div>
+    <include src="./partials/program.html" /></include>
+    <div class="bottom-common-background">
+    <include src="./partials/reviews.html" /></include>
+    <include src="./partials/registration.html" /></include>
+    <include src="./partials/contact.html" /></include>
+    <include src="./partials/footer.html" /></include>
     </div>
   </body>
 </html>

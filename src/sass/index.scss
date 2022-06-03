@@ -1,9 +1,23 @@
-@import './common';
-@import './container';
-@import './header';
-@import './logo';
-@import './nav';
-@import './pages';
-@import './hero';
-@import './social';
-@import './about-us';
+// MIXINS START
+@import './mixins/breakpoints';
+// MIXINS END
+
+// ULITLS START
+@import './utils/variables';
+@import './utils/common';
+@import './utils/container';
+@import './utils/visually-hidden';
+@import './utils/common-backgrounds';
+@import './utils/social';
+// UTILS END
+
+// COMPONTENTS START
+@import './components/header';
+@import './components/hero';
+@import './components/about-us';
+@import './components/program';
+@import './components/reviews';
+@import './components/registration';
+@import './components/contact';
+@import './components/footer';
+// COMPONENTS END
