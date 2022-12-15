@@ -1,11 +1,11 @@
 {
-  "name": "parcel-project-template",
+  "name": "donut-masterclass",
   "version": "2.0.0",
   "description": "",
-  "homepage": "https://Sinat1.github.io/donut-master-class",
+  "homepage": "https://kristina-salnyk.github.io/donut-masterclass",
   "scripts": {
     "start": "parcel src/*.html",
-    "build": "parcel build src/*.html --public-url /donut-master-class/"
+    "build": "parcel build src/*.html --public-url /donut-masterclass/"
   },
   "repository": {
     "type": "git",
